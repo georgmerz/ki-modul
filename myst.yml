@@ -3,6 +3,13 @@ version: 1
 project:
   title: KI Online Modul
   description: Einfuehrung in die KI mit Grundlagen, erweiterten Verfahren sowie Ethik und Compliance.
+  github: georgmerz/ki-modul
+  jupyter:
+    binder:
+      repo: georgmerz/ki-modul
+      provider: github
+      ref: main
+    kernelName: python3
   keywords:
     - jupyter-book
     - myst
