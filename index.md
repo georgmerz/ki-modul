@@ -1,19 +1,33 @@
 ---
 title: KI Online Modul
-subtitle: Jupyter Book 2 template
+subtitle: Einfuehrung in die KI
 ---
 
 # KI Online Modul
 
-Welcome to the course book. This template is set up for Jupyter Book 2 / MyST and can contain Markdown pages, executable code blocks, notebooks, equations, figures, exercises, and references.
+Dieses Jupyter Book bildet die aktuelle Gliederung des Moduls "Einfuehrung in die KI" ab. Die Inhalte sind in drei Bereiche gegliedert: Grundlagen der KI, erweiterte KI-Verfahren und Anwendungen sowie Ethik und Compliance.
 
-## How to use this template
+## Modulueberblick
 
-Edit the files listed in `myst.yml` under `project.toc` to shape the navigation. Add new chapters in `chapters/`, then register them in the table of contents.
+1. Grundlagen der KI, ca. 70 Prozent
+2. Erweiterte KI-Verfahren und Anwendungen, ca. 20 Prozent
+3. Ethik und Compliance im Bereich KI, ca. 10 Prozent
 
-## Local preview
+## Einheiten
 
-Install the Jupyter Book 2 tooling, then start the preview server:
+- Einheit 1 bis 4: Grundlagen, maschinelles Lernen und Modellevaluation
+- Einheit 5 bis 8: Symbolische KI, Suche, Entscheidungsbaeume und Unsicherheit
+- Einheit 9 bis 12: Neuronale Netze, Sprachmodelle, Anwendungen und verantwortungsvoller KI-Einsatz
+
+## Zusammenarbeit
+
+- Georg: Einheiten 1 bis 4
+- Emanuel: Einheiten 5 bis 8
+- Darya: Einheiten 9 bis 12
+
+## Lokale Vorschau
+
+Installiere die Jupyter-Book-2-Werkzeuge und starte dann den lokalen Vorschau-Server:
 
 ```bash
 python -m venv .venv
@@ -22,7 +36,7 @@ pip install -r requirements.txt
 jupyter book start
 ```
 
-You can also use MyST directly:
+Alternativ direkt mit MyST:
 
 ```bash
 pip install mystmd
@@ -35,4 +49,4 @@ myst start
 jupyter book build --html
 ```
 
-The generated site is written to `_build/html`.
+Die generierte HTML-Version liegt anschliessend unter `_build/html`.

@@ -2,23 +2,38 @@ version: 1
 
 project:
   title: KI Online Modul
-  description: A Jupyter Book 2 template for teaching material, notebooks, and exercises.
+  description: Einfuehrung in die KI mit Grundlagen, erweiterten Verfahren sowie Ethik und Compliance.
   keywords:
     - jupyter-book
     - myst
     - teaching
+    - ki
+    - machine-learning
   authors: []
   license:
     content: CC-BY-4.0
     code: MIT
   toc:
     - file: index.md
-    - title: Module
+    - title: Teil 1 Grundlagen der KI
       children:
-        - file: chapters/01-introduction.md
-        - file: chapters/02-notebook-example.ipynb
-        - file: chapters/03-exercises.md
-    - title: Resources
+        - file: chapters/01-einheit-1.md
+        - file: chapters/02-einheit-2.md
+        - file: chapters/03-einheit-3.md
+        - file: chapters/04-einheit-4.md
+        - file: chapters/05-einheit-5.md
+        - file: chapters/06-einheit-6.md
+        - file: chapters/07-einheit-7.md
+        - file: chapters/08-einheit-8.md
+    - title: Teil 2 Erweiterte KI-Verfahren und Anwendungen
+      children:
+        - file: chapters/09-einheit-9-10.md
+        - file: chapters/10-einheit-11.md
+        - file: chapters/11-einheit-12.md
+    - title: Teil 3 Ethik und Compliance
+      children:
+        - file: chapters/12-ethik-und-compliance.md
+    - title: Ressourcen
       children:
         - file: references.md
 
