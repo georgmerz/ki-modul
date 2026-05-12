@@ -1,4 +1,8 @@
 jupyter-book>=2.0.0
 mystmd
+jupyter-server
+ipykernel
 numpy
 matplotlib
+scikit-learn
+ipywidgets

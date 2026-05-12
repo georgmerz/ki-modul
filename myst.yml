@@ -20,6 +20,7 @@ project:
         - file: chapters/01-einheit-1.md
         - file: chapters/02-einheit-2.md
         - file: chapters/03-einheit-3.md
+        - file: chapters/03-lineare-regression-code.ipynb
         - file: chapters/04-einheit-4.md
         - file: chapters/05-einheit-5.md
         - file: chapters/06-einheit-6.md

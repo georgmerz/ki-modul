@@ -28,6 +28,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
       - uses: actions/setup-node@v4
         with:
           node-version: 18.x
@@ -35,13 +39,16 @@ jobs:
       - name: Install MyST Markdown
         run: npm install -g mystmd
 
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
       - name: Build HTML assets
-        run: myst build --html
+        run: myst build --execute --html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./_build/html
+          path: ./_build/site
 
       - name: Deploy to GitHub Pages
         id: deployment

@@ -8,19 +8,19 @@ This is a Jupyter Book 2 / MyST template.
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-jupyter book start
+jupyter book start --execute
 ```
 
 The equivalent MyST command is:
 
 ```bash
-myst start
+myst start --execute
 ```
 
 ## Build HTML
 
 ```bash
-jupyter book build --html
+jupyter book build --execute --html
 ```
 
 Preview the built HTML through a local web server:

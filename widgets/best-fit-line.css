@@ -1,0 +1,68 @@
+.fit-widget {
+  border: 1px solid #d7d0c3;
+  border-radius: 12px;
+  background: #fffdf8;
+  padding: 1rem;
+  margin: 1rem 0;
+  color: #2c2924;
+}
+
+.fit-widget-title {
+  margin: 0 0 0.75rem;
+  font-weight: 600;
+}
+
+.fit-widget-chart {
+  width: 100%;
+  display: block;
+  margin-bottom: 0.85rem;
+}
+
+.fit-widget-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.6rem;
+}
+
+.fit-widget-controls button {
+  appearance: none;
+  border: 1px solid #b8ad98;
+  border-radius: 10px;
+  background: #f5f0e4;
+  color: #2c2924;
+  padding: 0.75rem 0.85rem;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 120ms ease, border-color 120ms ease, transform 120ms ease;
+}
+
+.fit-widget-controls button:hover {
+  background: #efe6d1;
+  border-color: #9c8f76;
+}
+
+.fit-widget-controls button.is-selected {
+  background: #f1d8bf;
+  border-color: #c84c22;
+}
+
+.fit-widget-feedback {
+  margin-top: 0.85rem;
+  padding: 0.85rem;
+  border-radius: 10px;
+  background: #f7f3ea;
+}
+
+.fit-widget-hint {
+  margin: 0.75rem 0 0;
+  font-size: 0.95rem;
+  color: #595247;
+}
+
+.axis-label,
+.axis-title {
+  fill: #5f5648;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+}
