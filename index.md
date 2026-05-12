@@ -19,6 +19,10 @@ Dieses Jupyter Book bildet die aktuelle Gliederung des Moduls "Einfuehrung in di
 - Einheit 5 bis 8: Symbolische KI, Suche, Entscheidungsbaeume und Unsicherheit
 - Einheit 9 bis 12: Neuronale Netze, Sprachmodelle, Anwendungen und verantwortungsvoller KI-Einsatz
 
+## Begleitende Notebooks
+
+- Zu Kapitel 3: [Notebook zur linearen Regression](chapters/03-lineare-regression-code.ipynb)
+
 ## Zusammenarbeit
 
 - Georg: Einheiten 1 bis 4
