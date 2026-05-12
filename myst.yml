@@ -1,0 +1,30 @@
+version: 1
+
+project:
+  title: KI Online Modul
+  description: A Jupyter Book 2 template for teaching material, notebooks, and exercises.
+  keywords:
+    - jupyter-book
+    - myst
+    - teaching
+  authors: []
+  license:
+    content: CC-BY-4.0
+    code: MIT
+  toc:
+    - file: index.md
+    - title: Module
+      children:
+        - file: chapters/01-introduction.md
+        - file: chapters/02-notebook-example.ipynb
+        - file: chapters/03-exercises.md
+    - title: Resources
+      children:
+        - file: references.md
+
+site:
+  template: book-theme
+  title: KI Online Modul
+  options:
+    logo_text: KI Online Modul
+    folders: true

@@ -1,0 +1,7 @@
+_build/
+.jupyter_cache/
+.myst/
+.ipynb_checkpoints/
+.venv/
+__pycache__/
+.DS_Store
