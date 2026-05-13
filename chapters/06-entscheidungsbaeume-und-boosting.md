@@ -11,12 +11,14 @@ title: Einheit 6 Entscheidungsbaeume und Boosting
 - Entscheidungsbaeume
 - Boosting
 
-## Lernziele
+:::{admonition} Lernziele
 
 - Den Aufbau und die Funktionsweise von Entscheidungsbaeumen beschreiben
 - Vor- und Nachteile baumbasierter Modelle benennen
 - Die Grundidee von Boosting verstehen
 - Ensemble-Verfahren als Leistungssteigerung einordnen
+
+:::
 
 ## Platz fuer Materialien
 

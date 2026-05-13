@@ -12,12 +12,14 @@ title: Einheit 11 Sprachmodelle und erweiterte KI-Anwendungen
 - Transformer
 - Beispiele erweiterter KI-Anwendungen
 
-## Lernziele
+:::{admonition} Lernziele
 
 - Die Rolle von Transformern in modernen Sprachmodellen verstehen
 - Grundideen grosser Sprachmodelle einordnen
 - Anwendungen generativer KI kritisch diskutieren
 - Verbindungen zwischen Modellarchitektur und Einsatzgebiet herstellen
+
+:::
 
 ## Platz fuer Materialien
 

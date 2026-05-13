@@ -13,12 +13,14 @@ title: Einheit 4 Modellevaluation, Overfitting und Underfitting
 - Einfache Guetemasse
 - Overfitting und Underfitting
 
-## Lernziele
+:::{admonition} Lernziele
 
 - Vorhersagemodelle systematisch bewerten
 - Eine Confusion Matrix lesen und interpretieren
 - Zentrale Metriken fuer Klassifikation benennen
 - Overfitting und Underfitting erkennen und erklaeren
+
+:::
 
 ## Platz fuer Materialien
 

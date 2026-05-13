@@ -14,12 +14,14 @@ title: Einheit 1 Motivation, Grundbegriffe und Lernparadigmen
 - Lernparadigmen: Supervised und Unsupervised Learning
 - Typische Aufgaben: Klassifikation, Regression, Clustering
 
-## Lernziele
+:::{admonition} Lernziele
 
 - Zentrale Begriffe der KI sicher einordnen
 - Intelligente Agenten und KI-Paradigmen unterscheiden
 - Ueberblick ueber zentrale Lernparadigmen gewinnen
 - Typische Aufgaben des maschinellen Lernens benennen und an Beispielen erkennen
+
+:::
 
 ## Platz fuer Materialien
 

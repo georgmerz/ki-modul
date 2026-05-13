@@ -12,12 +12,14 @@ title: Einheit 8 Umgang mit Unsicherheit in KI-Systemen
 - Naive-Bayes-Klassifikator
 - Einfuehrung in Bayessche Netze
 
-## Lernziele
+:::{admonition} Lernziele
 
 - Unsicherheit als Bestandteil realer KI-Probleme erkennen
 - Den Naive-Bayes-Klassifikator in Grundzuegen verstehen
 - Bayessche Netze als probabilistische Modelle einordnen
 - Wahrscheinlichkeiten zur Modellierung unvollstaendiger Information nutzen
+
+:::
 
 ## Platz fuer Materialien
 

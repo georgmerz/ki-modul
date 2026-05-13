@@ -16,12 +16,14 @@ title: Einheit 2 Unsupervised Learning, Clustering und Dimensionsreduktion
 - PCA
 - t-SNE
 
-## Lernziele
+:::{admonition} Lernziele
 
 - Den Unterschied zwischen ueberwachtem und unueberwachtem Lernen erklaeren
 - Wichtige Clustering-Verfahren vergleichen
 - Die Idee der Dimensionsreduktion motivieren
 - PCA und t-SNE anhand typischer Einsatzszenarien einordnen
+
+:::
 
 ## Platz fuer Materialien
 

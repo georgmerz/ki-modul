@@ -13,12 +13,14 @@ title: Einheit 12 Transfer, Anwendungen und Ausblick
 - Transfer in Fachkontexte
 - Ausblick
 
-## Lernziele
+:::{admonition} Lernziele
 
 - Fortgeschrittene KI-Verfahren in einen Gesamtzusammenhang einordnen
 - Einsatzszenarien fachlich reflektieren
 - Chancen, Grenzen und Risiken fortgeschrittener Anwendungen diskutieren
 - Einen Ausblick auf weiterfuehrende Themen entwickeln
+
+:::
 
 ## Platz fuer Materialien
 

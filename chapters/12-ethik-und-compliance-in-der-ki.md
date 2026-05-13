@@ -14,12 +14,14 @@ title: Ethik und Compliance im Bereich KI
 - Ueberblick ueber regulatorische Rahmenbedingungen
 - EU AI Act
 
-## Lernziele
+:::{admonition} Lernziele
 
 - Ethische Risiken von KI-Systemen benennen
 - Fairness, Transparenz und Erklaerbarkeit differenziert diskutieren
 - Zentrale Datenschutzfragen erkennen
 - Regulatorische Rahmenbedingungen in Grundzuegen einordnen
+
+:::
 
 ## Platz fuer Materialien
 

@@ -1,24 +1,29 @@
 ---
-title: "Supervised Learning: Lineare und Logistische Regression"
+title: "3.1 Lineare Regression"
 kernelspec:
   name: python3
   display_name: Python 3
 ---
 
-# Supervised Learning: Lineare und Logistische Regression
+# 3.1 Lineare Regression
 
-In diesem Kapitel geht es zunaechst nur um lineare Regression. Die logistische Regression folgt danach als eigener naechster Schritt.
+![Abstrakte Visualisierung von Datenpunkten und einer Regressionsgeraden](../media/kapitel-3-1-lineare-regression-banner.png)
 
-## Lernziele
+
+
+In diesem Kapitel lernst du die **lineare Regression** als eines der grundlegenden Regressionsverfahren des Supervised Learning kennen. 
+
+:::{admonition} Lernziele
 
 Nach diesem Kapitel kannst du:
 
-1. ein Regressionsproblem als Suche nach einer Funktion beschreiben,
-2. lineare Regression in einer Dimension erklaeren,
-3. Steigung und Achsenabschnitt sinnvoll interpretieren,
-4. den MSE als Kriterium fuer eine "gute" Gerade einsetzen,
-5. lineare Regression von einer Dimension auf mehrere Merkmale erweitern,
-6. die Grundidee der rechnerischen Loesung einordnen.
+1. entscheiden, ob die lineare Regression für ein Problem anwendbar ist
+2. lineare Regression in einer Dimension erklaeren und durch Formeln beschreiben.
+4. das Konzept Mean Squard Error als Kriterium für eine "gute" Gerade nachvollziehen und die Formel interpretieren
+5. das Lineare Regressionsproblem in einer Dimension rechnerisch lösen.
+6. Die Verallgemeinerung für die mehrdimensionale lineare Regression nachvollziehen
+
+:::
 
 ````{code-cell} python
 :tags: remove-input
@@ -46,9 +51,20 @@ def mean_squared_error_np(y_true, y_pred):
     return np.mean((y_true - y_pred) ** 2)
 ````
 
-## Ein Beispiel mit vielen Merkmalen
+## Problem: Berechnung der Miete
+Stell dir vor du hast ein Wohnungsangebot gegeben mit folgenden Daten:
+- Wohnflaeche: 75 m2
+- Zimmer: 3
+- Baujahr: 2005
+- Entfernung zum Zentrum: 4 km
+- Etage: 3
+- Balkon: Ja
+- Energieklasse: B
+- Miete: 1200 EUR
 
-Ein realer Datensatz enthaelt oft mehr als nur ein einziges Merkmal. Bei Wohnungen koennen zum Beispiel Wohnflaeche, Zimmerzahl, Baujahr, Lage oder Balkon eine Rolle spielen.
+Du willst wissen, ob das ein gut preis ist. 
+
+Stell dir vor du hast Zugriff auf einen Datensatz mit Informationen zu vielen Wohnungen, inklusive ihrer Miete. 
 
 | Wohnflaeche in m2 | Zimmer | Baujahr | Entfernung zum Zentrum in km | Etage | Balkon | Energieklasse | Miete in EUR |
 | ---: | ---: | ---: | ---: | ---: | ---: | :---: | ---: |
@@ -65,14 +81,21 @@ Ein realer Datensatz enthaelt oft mehr als nur ein einziges Merkmal. Bei Wohnung
 | 92 | 4 | 2019 | 2.3 | 6 | 1 | A | 1410 |
 | 105 | 5 | 2012 | 1.8 | 5 | 1 | A | 1620 |
 
-In diesem Kapitel verwenden wir fuer den Einstieg trotzdem nur ein Merkmal: die Wohnflaeche. So laesst sich die Grundidee der linearen Regression klar und anschaulich entwickeln.
+Dein Ansatz ist jetzt folgender:
+Kann ich aus den Daten lernen, wie die Miete von den anderen Merkmalen abhaengt? Wenn ja, dann koennte ich das gelernte Modell verwenden, um die Miete fuer die neue Wohnung zu schaetzen.
 
-## Vom Datensatz zur Funktion
+Das ist also ein klassisches Problem des Supervised Learning in Form einer Regression: Es gibt einen Zielwert (die Miete), den ich vorhersagen will, und es gibt Eingabedaten (die anderen Merkmale), die ich verwenden kann, um die Vorhersage zu machen.
 
-Allgemein wollen wir aus Eingaben eine Vorhersage fuer einen Zielwert erzeugen. Mathematisch schreiben wir das als
+Wir wollen in diesem Kapitel Lernen, wie die lineare Regression als einfaches Modell fuer diese Aufgabe funktioniert. Dabei konzentrieren wir uns zunaechst auf die Wohnflaeche als einziges Merkmal und erweitern das Modell spaeter um weitere Merkmale.
+
+
+## Mathematische Formulierung des Regressionsproblems
+
+
+Mathematisch formuliert wollen wir eine Funktion $f$ finden, die aus den Eingabedaten $x$ eine Vorhersage $\hat{y}$ macht:
 
 ```{math}
-\hat{y} = f(x)
+f(x)= \hat{y} \approx y
 ```
 
 Dabei gilt:
@@ -82,12 +105,20 @@ Dabei gilt:
 - $\hat{y}$: vorhergesagter Zielwert,
 - $f$: die gesuchte Funktion.
 
-Fuer unser Beispiel bedeutet das: Aus Eigenschaften einer Wohnung soll eine geschaetzte Miete berechnet werden.
+Fuer unser Beispiel bedeutet das: Aus den Wohnungsdaten wollen wir eine Funktion $f$ lernen, die wenn wir alle Eigenschaften bis auf die Miete eingeben, eine Vorhersage $\hat{y}$ fuer die Miete macht, die moeglichst nah am beobachteten Wert $y$ liegt.
+Wenn wir die Funktion dann gelernt haben, koennen wir sie verwenden, um die Miete fuer neue Wohnungen zu schaetzen, indem wir die entsprechenden Merkmale eingeben.
 
-Fuer den Einstieg machen wir die Aufgabe absichtlich einfacher. Wir betrachten nur die Wohnflaeche und verlangen, dass die Funktion linear ist. Damit wird aus $f$ eine Gerade.
+Die Lineare Regression ist ein spezielles Modell fuer die Funktion $f$. Sie nimmt an, dass $f$ eine lineare Funktion der Eingabedaten ist. Das bedeutet, dass die Vorhersage $\hat{y}$ als gewichtete Summe der Eingabedaten plus einem Achsenabschnitt dargestellt werden kann.
 
+
+D.h. die Funktion $f$ hat die Form:
 ```{math}
-\hat{y} = m x + b
+f(x) = m x + b \quad \text{(in einer Dimension)}
+```
+
+oder allgemeiner
+```{math}
+f(x) = w_1 x_1 + w_2 x_2 + \dots + w_d x_d + b \quad \text{(in mehreren Dimensionen)}
 ```
 
 ## Lineare Regression in einer Dimension
@@ -339,4 +370,6 @@ finden.
 
 Der Code zur linearen Regression wird im begleitenden Notebook besprochen: [Notebook zur linearen Regression](03-lineare-regression-code.ipynb).
 
-Danach folgt als naechstes Thema die logistische Regression.
+Wenn du das Notebook direkt in einer interaktiven Umgebung oeffnen willst, kannst du es auch in Google Colab starten: [Lineare Regression in Colab](https://colab.research.google.com/github/georgmerz/ki-modul/blob/main/chapters/03-lineare-regression-code.ipynb).
+
+Danach folgt als naechstes Thema die [logistische Regression](03-2-logistische-regression.md).

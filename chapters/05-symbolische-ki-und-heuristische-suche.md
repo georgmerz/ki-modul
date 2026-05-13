@@ -15,12 +15,14 @@ title: Einheit 5 Symbolische KI und heuristische Suche
 - Minimax
 - Alpha-Beta-Pruning
 
-## Lernziele
+:::{admonition} Lernziele
 
 - Suchprobleme als Zustandsraeume modellieren
 - Informierte und uninformierte Suche unterscheiden
 - A* in Grundzuegen erklaeren
 - Spielbaumsuche fuer Entscheidungsprobleme einordnen
+
+:::
 
 ## Platz fuer Materialien
 

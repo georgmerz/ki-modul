@@ -22,6 +22,7 @@ Dieses Jupyter Book bildet die aktuelle Gliederung des Moduls "Einfuehrung in di
 ## Begleitende Notebooks
 
 - Zu Kapitel 3: [Notebook zur linearen Regression](chapters/03-lineare-regression-code.ipynb)
+- Direkt in Google Colab: [Lineare Regression in Colab](https://colab.research.google.com/github/georgmerz/ki-modul/blob/main/chapters/03-lineare-regression-code.ipynb)
 
 ## Zusammenarbeit
 
