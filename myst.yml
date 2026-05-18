@@ -2,7 +2,7 @@ version: 1
 
 project:
   title: KI Online Modul
-  description: Einfuehrung in die KI mit Grundlagen, erweiterten Verfahren sowie Ethik und Compliance.
+  description: Einführung in die KI mit Grundlagen, erweiterten Verfahren sowie Ethik und Compliance.
   github: georgmerz/ki-modul
   jupyter:
     binder:
@@ -32,6 +32,24 @@ project:
         - title: "3.1 Lineare Regression"
           file: chapters/03-1-lineare-regression.md
           children:
+            - title: Problem und Datensatz
+              file: chapters/03-1a-problem-und-datensatz.md
+            - title: Regressionsproblem mathematisch formuliert
+              file: chapters/03-1b-regressionsproblem-mathematisch.md
+            - title: Gerade in einer Dimension
+              file: chapters/03-1c-gerade-in-einer-dimension.md
+            - title: Fehlermaße und MSE
+              file: chapters/03-1d-fehlermasse-und-mse.md
+            - title: Formulierung als Optimierungsproblem
+              file: chapters/03-1e-optimierungsproblem.md
+            - title: Explizite Lösung in einer Dimension
+              file: chapters/03-1f-loesung-in-einer-dimension.md
+            - title: Mehrere Merkmale
+              file: chapters/03-1g-mehrere-merkmale.md
+            - title: MSE in allgemeiner Form
+              file: chapters/03-1h-mse-allgemein.md
+            - title: Ausblick und Notebook
+              file: chapters/03-1i-ausblick-und-notebook.md
             - title: Notebook zur linearen Regression
               file: chapters/03-lineare-regression-code.ipynb
         - title: "3.2 Logistische Regression"
@@ -40,9 +58,9 @@ project:
       file: chapters/04-modellevaluation-overfitting-underfitting.md
     - title: "Kapitel 5: Symbolische KI und heuristische Suche"
       file: chapters/05-symbolische-ki-und-heuristische-suche.md
-    - title: "Kapitel 6: Entscheidungsbaeume und Boosting"
+    - title: "Kapitel 6: Entscheidungsbäume und Boosting"
       file: chapters/06-entscheidungsbaeume-und-boosting.md
-    - title: "Kapitel 7: Wissensbasierte Systeme und logisches Schliessen"
+    - title: "Kapitel 7: Wissensbasierte Systeme und logisches Schließen"
       file: chapters/07-wissensbasierte-systeme-und-logisches-schliessen.md
     - title: "Kapitel 8: Umgang mit Unsicherheit in KI-Systemen"
       file: chapters/08-umgang-mit-unsicherheit-in-ki-systemen.md

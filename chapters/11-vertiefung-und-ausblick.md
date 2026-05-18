@@ -8,7 +8,7 @@ title: Einheit 12 Transfer, Anwendungen und Ausblick
 
 ## Themen
 
-- Zusammenfuehrung fortgeschrittener KI-Verfahren
+- Zusammenführung fortgeschrittener KI-Verfahren
 - Anwendungsdiskussion
 - Transfer in Fachkontexte
 - Ausblick
@@ -18,11 +18,11 @@ title: Einheit 12 Transfer, Anwendungen und Ausblick
 - Fortgeschrittene KI-Verfahren in einen Gesamtzusammenhang einordnen
 - Einsatzszenarien fachlich reflektieren
 - Chancen, Grenzen und Risiken fortgeschrittener Anwendungen diskutieren
-- Einen Ausblick auf weiterfuehrende Themen entwickeln
+- Einen Ausblick auf weiterführende Themen entwickeln
 
 :::
 
-## Platz fuer Materialien
+## Platz für Materialien
 
 - Fallstudien
 - Abschlussaufgabe

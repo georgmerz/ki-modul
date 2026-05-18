@@ -17,16 +17,16 @@ title: Einheit 5 Symbolische KI und heuristische Suche
 
 :::{admonition} Lernziele
 
-- Suchprobleme als Zustandsraeume modellieren
+- Suchprobleme als Zustandsräume modellieren
 - Informierte und uninformierte Suche unterscheiden
-- A* in Grundzuegen erklaeren
-- Spielbaumsuche fuer Entscheidungsprobleme einordnen
+- A* in Grundzügen erklären
+- Spielbaumsuche für Entscheidungsprobleme einordnen
 
 :::
 
-## Platz fuer Materialien
+## Platz für Materialien
 
 - Suchbaum-Beispiele
 - Animationen zu A*
 - Spielbaumaufgaben
-- Uebungsblatt
+- Übungsblatt

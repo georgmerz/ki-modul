@@ -8,22 +8,22 @@ title: Einheit 11 Sprachmodelle und erweiterte KI-Anwendungen
 
 ## Themen
 
-- Ueberblick ueber Sprachmodelle
+- Überblick über Sprachmodelle
 - Transformer
 - Beispiele erweiterter KI-Anwendungen
 
 :::{admonition} Lernziele
 
 - Die Rolle von Transformern in modernen Sprachmodellen verstehen
-- Grundideen grosser Sprachmodelle einordnen
+- Grundideen großer Sprachmodelle einordnen
 - Anwendungen generativer KI kritisch diskutieren
 - Verbindungen zwischen Modellarchitektur und Einsatzgebiet herstellen
 
 :::
 
-## Platz fuer Materialien
+## Platz für Materialien
 
-- Architekturueberblick
+- Architekturüberblick
 - Anwendungsbeispiele
 - Prompting-Demos
 - Diskussion zu Chancen und Grenzen

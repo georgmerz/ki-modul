@@ -17,6 +17,17 @@ function drawAxes(svg, sx, sy, xTicks, yTicks) {
     line.setAttribute('y2', String(sy(10)));
     line.setAttribute('stroke', '#ebe4d7');
     svg.appendChild(line);
+
+    if (x !== 0) {
+      const label = document.createElementNS(ns, 'text');
+      label.setAttribute('x', String(sx(x)));
+      label.setAttribute('y', String(sy(-0.9)));
+      label.setAttribute('fill', '#6b6358');
+      label.setAttribute('font-size', '12');
+      label.setAttribute('text-anchor', 'middle');
+      label.textContent = String(x);
+      svg.appendChild(label);
+    }
   });
 
   yTicks.forEach((y) => {
@@ -27,6 +38,17 @@ function drawAxes(svg, sx, sy, xTicks, yTicks) {
     line.setAttribute('y2', String(sy(y)));
     line.setAttribute('stroke', '#ebe4d7');
     svg.appendChild(line);
+
+    if (y !== 0) {
+      const label = document.createElementNS(ns, 'text');
+      label.setAttribute('x', String(sx(-0.8)));
+      label.setAttribute('y', String(sy(y) + 4));
+      label.setAttribute('fill', '#6b6358');
+      label.setAttribute('font-size', '12');
+      label.setAttribute('text-anchor', 'end');
+      label.textContent = String(y);
+      svg.appendChild(label);
+    }
   });
 
   const xAxis = document.createElementNS(ns, 'line');
@@ -46,6 +68,24 @@ function drawAxes(svg, sx, sy, xTicks, yTicks) {
   yAxis.setAttribute('stroke', '#49423a');
   yAxis.setAttribute('stroke-width', '2');
   svg.appendChild(yAxis);
+
+  const xLabel = document.createElementNS(ns, 'text');
+  xLabel.setAttribute('x', String(sx(9.4)));
+  xLabel.setAttribute('y', String(sy(-0.8)));
+  xLabel.setAttribute('fill', '#49423a');
+  xLabel.setAttribute('font-size', '16');
+  xLabel.setAttribute('font-weight', '600');
+  xLabel.textContent = 'x';
+  svg.appendChild(xLabel);
+
+  const yLabel = document.createElementNS(ns, 'text');
+  yLabel.setAttribute('x', String(sx(0.7)));
+  yLabel.setAttribute('y', String(sy(9.2)));
+  yLabel.setAttribute('fill', '#49423a');
+  yLabel.setAttribute('font-size', '16');
+  yLabel.setAttribute('font-weight', '600');
+  yLabel.textContent = 'y';
+  svg.appendChild(yLabel);
 }
 
 function render({ model, el }) {

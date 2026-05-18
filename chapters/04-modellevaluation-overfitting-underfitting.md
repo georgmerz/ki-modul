@@ -17,14 +17,14 @@ title: Einheit 4 Modellevaluation, Overfitting und Underfitting
 
 - Vorhersagemodelle systematisch bewerten
 - Eine Confusion Matrix lesen und interpretieren
-- Zentrale Metriken fuer Klassifikation benennen
-- Overfitting und Underfitting erkennen und erklaeren
+- Zentrale Metriken für Klassifikation benennen
+- Overfitting und Underfitting erkennen und erklären
 
 :::
 
-## Platz fuer Materialien
+## Platz für Materialien
 
 - Bewertungsbeispiele
 - Fehlklassifikationsanalysen
 - Mini-Quiz
-- Vertiefende Uebung zur Modellguete
+- Vertiefende Übung zur Modellgüte

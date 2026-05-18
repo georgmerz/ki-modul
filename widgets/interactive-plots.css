@@ -80,6 +80,20 @@
   background: #efe6d1;
 }
 
+.widget-actions button.is-active {
+  background: #d96b4c;
+  border-color: #b55237;
+  color: #fffaf5;
+}
+
+.regression-canvas {
+  cursor: crosshair;
+}
+
+.regression-canvas text {
+  user-select: none;
+}
+
 .axis-label,
 .axis-title {
   fill: #5f5648;

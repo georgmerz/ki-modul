@@ -11,19 +11,19 @@ title: Ethik und Compliance im Bereich KI
 - Bias und Fairness in KI-Systemen
 - Explainable AI und Transparenz
 - Datenschutz, DSGVO
-- Ueberblick ueber regulatorische Rahmenbedingungen
+- Überblick über regulatorische Rahmenbedingungen
 - EU AI Act
 
 :::{admonition} Lernziele
 
 - Ethische Risiken von KI-Systemen benennen
-- Fairness, Transparenz und Erklaerbarkeit differenziert diskutieren
+- Fairness, Transparenz und Erklärbarkeit differenziert diskutieren
 - Zentrale Datenschutzfragen erkennen
-- Regulatorische Rahmenbedingungen in Grundzuegen einordnen
+- Regulatorische Rahmenbedingungen in Grundzügen einordnen
 
 :::
 
-## Platz fuer Materialien
+## Platz für Materialien
 
 - Fallbeispiele
 - Leitfragen zur Reflexion

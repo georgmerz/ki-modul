@@ -1,5 +1,5 @@
 ---
-title: Einheit 6 Entscheidungsbaeume und Boosting
+title: Einheit 6 Entscheidungsbäume und Boosting
 ---
 
 # Einheit 6
@@ -8,21 +8,21 @@ title: Einheit 6 Entscheidungsbaeume und Boosting
 
 ## Themen
 
-- Entscheidungsbaeume
+- Entscheidungsbäume
 - Boosting
 
 :::{admonition} Lernziele
 
-- Den Aufbau und die Funktionsweise von Entscheidungsbaeumen beschreiben
+- Den Aufbau und die Funktionsweise von Entscheidungsbäumen beschreiben
 - Vor- und Nachteile baumbasierter Modelle benennen
 - Die Grundidee von Boosting verstehen
 - Ensemble-Verfahren als Leistungssteigerung einordnen
 
 :::
 
-## Platz fuer Materialien
+## Platz für Materialien
 
 - Baumvisualisierungen
 - Klassifikationsbeispiele
 - Vergleich einzelner und kombinierter Modelle
-- Uebungsaufgaben
+- Übungsaufgaben

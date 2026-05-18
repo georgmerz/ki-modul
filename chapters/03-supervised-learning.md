@@ -19,9 +19,9 @@ Beide Verfahren lernen aus Beispieldaten. Der Unterschied liegt in der Art der V
 
 Nach Kapitel 3 kannst du:
 
-1. den Unterschied zwischen Regression und Klassifikation erklaeren,
-2. lineare Regression als Modell fuer metrische Zielgroessen einordnen,
-3. logistische Regression als Modell fuer Klassifikationsaufgaben einordnen,
+1. den Unterschied zwischen Regression und Klassifikation erklären,
+2. lineare Regression als Modell für metrische Zielgrößen einordnen,
+3. logistische Regression als Modell für Klassifikationsaufgaben einordnen,
 4. typische Einsatzgebiete beider Verfahren vergleichen,
 5. die Grenzen einfacher linearer Modelle benennen.
 
